@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:largeHeap="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDB58"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#0000ff"
+        android:textSize="30dp"></TextView>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Height (cm)"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Weight (kg)"
+            android:textStyle="bold">
+
+        </EditText>
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/grb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="girl"
+                android:textStyle="bold"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/brb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="boy"
+                android:textStyle="bold">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/calbtn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#0000FF"
+            android:text="Calculate BMI"
+            android:textStyle="bold">
+
+
+        </Button>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="22dp"
+        android:src="@drawable/hand">
+
+    </ImageView>
+
+</RelativeLayout>
